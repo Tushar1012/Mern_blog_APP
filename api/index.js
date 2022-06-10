@@ -41,7 +41,7 @@ mongoose
   app.use("/api/posts", postRoute);
   app.use("/api/categories", categoriesRoute);
 
-app.listen("5000", () => {
-  console.log("Backend is running at  5000");
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Backend is running ");
 });
  
